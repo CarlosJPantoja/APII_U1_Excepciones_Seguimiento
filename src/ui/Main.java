@@ -55,11 +55,17 @@ public class Main {
 	}
 	
 	public void addPerson() {
-		System.out.println("\nChoose your document type");
-		int type = lector.nextInt();
+		System.out.println("\nChoose your document type: \n1: TI: Tarjeta de Identidad \n2: CC: Cedula de Ciudadania \n3: PP: Pasaporte \n4: CE: Cedula de Extranjeria");
+		int type = lector.nextInt(); lector.nextLine();
 		System.out.println("\nEnter your document number");
 		String numDocumento = lector.nextLine();
 		String msg = miBarrio.addPerson(type, numDocumento);
 		System.out.println("\n"+msg);
+	}
+	
+	public void logins() {
+		int logs = miBarrio.getIntentos();
+		String msg = "\nEl numero de intentos de ingreso al MiniMarket es: "+logs;
+		System.out.println(msg);
 	}
 }
