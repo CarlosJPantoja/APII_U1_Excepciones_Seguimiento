@@ -43,9 +43,4 @@ public class Person {
 	public String getNumDocumento() {
 		return numDocumento;
 	}
-
-	public void setNumDocumento(String numDocumento) {
-		this.numDocumento = numDocumento;
-	}
-	
 }

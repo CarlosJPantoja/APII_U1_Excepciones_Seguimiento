@@ -42,10 +42,6 @@ public class MiniMarket {
 		return persons;
 	}
 
-	public void setPersons(ArrayList<Person> persons) {
-		this.persons = persons;
-	}
-
 	public boolean isPar(int n) {
 		boolean par = false;
 		if(n%2 == 0) {
@@ -56,9 +52,5 @@ public class MiniMarket {
 	
 	public int getIntentos() {
 		return intentos;
-	}
-
-	public void setIntentos(int intentos) {
-		this.intentos = intentos;
 	}
 }
